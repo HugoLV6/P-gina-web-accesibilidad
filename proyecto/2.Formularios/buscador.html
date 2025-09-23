@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang= "es">
+    <head>
+        <meta charset="utf-8">
+        <title>Enciclopedia UA - Buscador</title>
+    </head>
+    <body>
+            <header>
+                <h1>Buscador</h1>
+            </header>
+            <main>
+                <a href="../1.Otros/main.html">Volver a la página principal</a>
+                <form action="buscador_respuesta.html" >
+                    <label for="descripcion">Descripción (campo obligatorio):</label><br>
+                    <input type="text" id="descripcion" name="descripcion" placeholder="Escriba aquí la descripción" required><br>
+                    
+                    <label for="causas">Causas:</label><br>
+                    <input type="text" id="causas" name="causas" placeholder="Escriba aquí las causas"><br>
+                    
+                    <label for="sintomas">Sintomas</label><br>
+                    <select id="sintomas" name="sintomas" size="5" multiple>
+                        <option value="fiebre">Fiebre</option>
+                        <option value="vomito">Vómito</option>
+                        <option value="diarrea">Diarrea</option>
+                        <option value="dolor_muscular">Dolor muscular</option>
+                        <option value="mareo">Mareo</option>
+                    </select><br>
+
+                    <label for="pruebas_y_examen">Pruebas y exámenes</label><br>
+                    <select id="pruebas_y_examen" name="pruebas_y_examen" size="5" multiple>
+                        <option value="analisis_de_sangre">Análisis de sangre</option>
+                        <option value="ecografia">Ecografía</option>
+                        <option value="radiografia">Radiografía</option>
+                        <option value="tomografia">Tomografía</option>
+                        <option value="ultrasonido">Ultrasonido</option>
+                    </select><br> 
+
+                    <label for="tratamiento">Tratamiento:</label><br>
+                    <input type="text" id="tratamiento" name="tratamiento" placeholder="Esciba aquí el tratamiento" ><br>
+                        
+                    <fieldset>
+                        <legend>Expectativas:</legend>
+                        <input type="radio" id="negativas" name="expectativas" value="negativas">
+                        <label for="negativas">Negativas</label><br>
+                        <input type="radio" id="sin_definir" name="expectativas" value="sin definir">
+                        <label for="sin_definir">Sin definir</label><br>
+                        <input type="radio" id="positivas" name="expectativas" value="positivas">
+                        <label for="positivas">Positivas</label><br>
+                    </fieldset>
+                    <input type="submit" value="Enviar">
+                </form>
+            </main>
+            <footer>
+            <h2>Contacto</h2>
+            <address>
+                Hugo Lerma Vivar: hlv2@alu.ua.es
+            </address>
+            <address>
+                Pedro Sánchez Blanco: psb39@alu.ua.es
+            </address>
+        </footer>
+    </body>
+</html>
