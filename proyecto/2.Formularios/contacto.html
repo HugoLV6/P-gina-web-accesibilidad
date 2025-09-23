@@ -9,7 +9,57 @@
                 <h1>Contacto</h1>
             </header>
             <main>
-                
+                <a href="../1.Otros/main.html">Volver a la página principal</a>
+                <form action="contacto_respuesta.html">
+                    <fieldset>
+                        <legend>Comentario</legend>
+                        <label for="asunto">Asunto (Campo obligatorio)</label><br>
+                        <input type="text" id="asunto" name ="asunto" placeholder="Escribe aquí el asunto" required><br>
+                    
+                        <label for="comentario">Comentario</label><br>                    
+                        <textarea id="comentario" name="comentario" rows="10" cols="30" placeholder="Escribe aquí tu comentario o pregunta"></textarea><br>
+                    </fieldset>
+                   
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        <label for="yosoy">Yo soy</label><br>
+                        <select id="yosoy" name="yosoy" size="6"><br>
+                            <option value="paciente">Paciente</option>
+                            <option value="cientifico">Científico</option>
+                            <option value="medico">Médico</option>
+                            <option value="educador">Educador</option>
+                            <option value="fabricante">Fabricante</option>
+                            <option value="periodista">Periodista</option>
+                        </select><br>
+
+                        <label for="fecha_nacimiento">Fecha de nacimiento</label><br>
+                        <input type="datetime-local" id="fecha_nacimiento" name="fecha_nacimiento"><br>
+                    
+                        <fieldset>
+                            <legend>Sexo</legend>
+                            <input type="radio" id="hombre" name="sexo" value="Hombre">
+                            <label for="hombre">Hombre</label><br>
+                            <input type="radio" id="mujer" name="sexo" value="Mujer">
+                            <label for="mujer">Mujer</label><br>
+                            <input type="radio" id="otros" name="sexo" value="Otros">
+                            <label for="otros">Otros</label>
+                        </fieldset>
+                    </fieldset>
+
+
+                    <label for="mas_información">Deseo recibir más información</label><br>
+                    <input type="checkbox" id="mas_información" name="mas_información" value="si"><br>
+                    <input type="submit" value="Enviar">
+                    </form>
             </main>
+            <footer>
+                <h2>Contacto</h2>
+                <address>
+                    Hugo Lerma Vivar: hlv2@alu.ua.es
+                </address>
+                <address>
+                    Pedro Sánchez Blanco: psb39@alu.ua.es
+                </address>
+            </footer>
     </body>
 </html>
