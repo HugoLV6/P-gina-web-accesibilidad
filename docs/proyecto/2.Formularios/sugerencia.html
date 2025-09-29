@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang= "es">
+    <head>
+        <meta charset="utf-8">
+        <title>Enciclopedia UA - Sugerencia</title>
+    </head>
+    <body>
+            <header>
+                <h1>Sugerencia</h1>
+            </header>
+            <main>
+                <a href="../1.Otros/main.html">Volver a la página principal</a>
+                <form action="sugerencia_respuesta.html" >
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <label for="nombre_apellidos">Nombre y apellidos (campo obligatorio):</label><br>
+                        <input type="text" id="nombre_apellidos" name="nombre_apellidos" placeholder="Escriba aqui su nombre y apellidos" required><br>
+                        <label for="email">Email (campo obligatorio):</label><br>
+                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]" placeholder="ejemplo@correo.com" required > <br>
+                    
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos sobre la enfermedad</legend>
+                        <label for="nombre_aenfermedad">Nombre de la enfermedad (campo obligatorio):</label><br>
+                        <input type="text" id="nombre_aenfermedad" name="nombre_aenfermedad" placeholder="Escriba el nombre de la enfermedad" required><br>
+                        <label for="fecha_enfermedad">Fecha cuando se tuvo la enfermedad</label><br>
+                        <input type="datetime-local" id="fecha_enfermedad" name="fecha_enfermedad"><br>                       
+                        <label for="importancia">Nivel de importacia de la enfermedad a añadir (entre 0 y 10):</label><br>
+                        <input type="range" id="importancia" name="importancia" min="0" max="10" step="1"><br>
+                        <label for="casos">Número de casos en un año (entre 1-1.000.000):</label><br>
+                        <input type="number" id="casos" name="casos" min="1" max="1000000"> <br>
+                        <label for="color">Seleciona el color que le gustaria que tuviera la enfermedad en la web:</label> <br>
+                        <input type="color" id="color" name="color"><br>
+                        <label for="descp">Descripcion enfermedad</label><br>                    
+                        <textarea id="comentario" name="descp" rows="10" cols="30" placeholder="Escribe aquí la descripcion de la enfermedad"></textarea><br>
+                    </fieldset>
+                    <input type="submit" value="Enviar">
+                </form>
+            </main>
+            <footer>
+            <h2>Contacto</h2>
+            <address>
+                Hugo Lerma Vivar: hlv2@alu.ua.es
+            </address>
+            <address>
+                Pedro Sánchez Blanco: psb39@alu.ua.es
+            </address>
+        </footer>
+    </body>
+</html>
