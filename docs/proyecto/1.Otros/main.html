@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Enciclopedia UA - Página Principal</title>
+        <link rel="stylesheet" href="../3.CSS/estilos.css">
+        
     </head>
     <body>
         <header>
@@ -12,14 +14,27 @@
         <nav aria-label="miga de pan">
             <a href="main.html">Inicio</a>
         </nav>
+        <h2 style="margin-left: 30px;"> Tabla de contenidos</h2>
+        <nav>
+            <ul>
+                <li><a href="#mapa">Mapa del sitio web</a></li>
+                <li><a href="#declaracion">Declaracion de accesbilidad</a></li>
+                <li><a href="#buscador">Buscador</a></li>
+                <li><a href="#destacados">Temas destacados</a></li>
+                <li><a href="#mapa2">Mapa de imagen</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#sugerencia">Sugerencias</a></li>
+            </ul>
+        </nav>
         <main>
             <p>
                 La enciclopedia <abbr title="Universidad de Alicante">UA</abbr> es una recopilación de más de 3 artículos y no menos de 5 de diferentes enfermedades y patologías
             </p>
             <nav>
-                <a href="mapa.html">Mapa del sitio web</a>
-                <a href="../2.Formularios/buscador.html">Buscador</a>
-                <ul>
+                <a class="boton-nav" id="mapa" href="mapa.html">Mapa del sitio web</a>
+                <a class="boton-nav" id="declaracion" href="declaracion.html">Declaracion de accesibilidad</a>
+                <a class="boton-nav" id="buscador" href="../2.Formularios/buscador.html">Buscador</a>
+                <ul class="indiceAZ">
                     <li><a href="../A/indexA.html">A</a></li>
                     <li><a href="../1.Otros/error.html">B</a></li>
                     <li><a href="../1.Otros/error.html">C</a></li>
@@ -48,8 +63,8 @@
                     <li><a href="../1.Otros/error.html">Z</a></li>
                 </ul>     
             </nav>
-            <section>
-                <h2>Temas Destacados</h2>
+            <section class="conBorde">
+                <h2 id="destacados">Temas Destacados</h2>
                 <article>
                     <h3><a href="../P/Pancreatitis/pancreatitis.html">Pancreatitis</a></h3>
                     <p>La pancreatitis, una inflamación del páncreas con causas tan variadas como el alcohol o los cálculos biliares, puede derivar en graves complicaciones. Descubre sus síntomas y riesgos clave. </p>
@@ -64,7 +79,7 @@
                 </article> 
              </section>
             <figure>
-                <p>Haz click en cada órgano para ver un ejemplo de una enfermedad que afecte a estos órganos</p>
+                <p id="mapa2">Haz click en cada órgano para ver un ejemplo de una enfermedad que afecte a estos órganos</p>
                 <img src="organos.jpg" usemap="#organos" alt="Ejemplos de enfermedades en algunos órganos del cuerpo humano">
                 <map name="organos">
                     <area target="_blank" alt="Enfermedad pulmones - Neumonía" title="Enfermedad pulmones - Neumonía" href="https://medlineplus.gov/spanish/ency/article/000145.htm" coords="425,183,299,58" shape="rect">
@@ -75,8 +90,8 @@
                     <area target="_blank" alt="Enfermedad cerebro - Parkinson" title="Enfermedad cerebro - Parkinson" href="../P/Parkinson/parkinson.html" coords="820,122,60" shape="circle">
                 </map>
              </figure>
-            <a href="../2.Formularios/contacto.html">Contacta con nosotros</a>
-            <a href="../2.Formularios/sugerencia.html">Sugiérenos alguna enfermedad</a>
+            <a class="boton-nav" id="contacto" href="../2.Formularios/contacto.html">Contacta con nosotros</a>
+            <a class="boton-nav" id="sugerencia" href="../2.Formularios/sugerencia.html">Sugiérenos alguna enfermedad</a>
         </main>
         <footer>
             <h2>Contacto</h2>

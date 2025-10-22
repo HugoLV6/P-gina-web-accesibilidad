@@ -1,0 +1,163 @@
+/* ====== ESTILOS GENERALES ====== */
+body {
+  font-family: Arial, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  line-height: 22px;      
+  margin: 0;               /* quitamos margen general */
+  padding: 0;
+}
+
+/* ====== ENCABEZADO ====== */
+header {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* ====== TITULO PRINCIPAL ====== */
+h1 {
+  color: #ffffff;
+  font-size: 34px;       
+  text-align: center;
+  margin: 0;
+  font-family: "Times New Roman", serif;        
+  padding: 0;
+}
+
+/* ====== ENCABEZADOS SECUNDARIOS ====== */
+h2 {
+  color: #004080;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: "Times New Roman", serif;
+}
+
+/* ====== PÁRRAFOS ====== */
+p {
+  font-size: 16px;
+  line-height: 24px;      
+  margin-bottom: 16px;    
+}
+
+/* ====== NAVEGACIÓN ====== */
+nav {
+  background-color: #dbe9fd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #004080;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: #919cd8;
+}
+
+/* ====== SECCIONES ====== */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  background-color: #dbe9fd;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+/* ====== IMÁGENES ====== */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 10px auto;
+}
+
+/* ====== CLASES PERSONALIZADAS ====== */
+.anuncio {
+  background-color: #9bf7c4;   
+  color: #000000;
+  border: 1px solid #ff0909;   
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.conBorde {
+  border: 2px solid #cd853f;   
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* ====== PIE DE PÁGINA ====== */
+body> footer {
+  background-color: #004080;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer h2 {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+address {
+  font-style: normal;
+  margin-bottom: 5px;
+}
+
+/* ====== Botones de navegación ====== */
+.boton-nav {
+  display: inline-block;           /* se comporta como un botón */
+  background-color: #004080;       /* azul corporativo */
+  color: #ffffff;                  /* texto blanco, alto contraste */
+  padding: 8px 16px;               /* espacio interno */
+  margin: 6px;                     /* separación entre botones */
+  border-radius: 6px;              /* bordes redondeados suaves */
+  text-decoration: none;           /* sin subrayado */
+  font-weight: bold;
+  font-size: 15px;
+  transition: background-color 0.2s ease; /* animación suave */
+}
+
+/* Al pasar el ratón */
+.boton-nav:hover {
+  background-color: #0066cc;       /* azul más claro al pasar */
+}
+
+/* Al recibir foco (teclado o lector de pantalla) */
+.boton-nav:focus {
+  outline: 3px solid #ffbf47;      /* borde visible para accesibilidad */
+  outline-offset: 2px;
+}
+
+
+/* ====== RESPONSIVE ====== */
+@media screen and (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin-bottom: 8px;
+  }
+}
+blockquote {
+  background-color: #e6f0ff;      /* fondo claro con buen contraste */
+  border-left: 4px solid #004080; /* marca de cita */
+  margin: 16px 0;
+  padding: 12px 16px;
+  font-style: italic;
+  color: #0f2437;                 /* texto oscuro legible */
+}
+
