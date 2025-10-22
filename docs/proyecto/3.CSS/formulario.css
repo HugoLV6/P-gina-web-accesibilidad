@@ -1,5 +1,5 @@
 /* ===== Formulario simple, verde y legible ===== */
-
+@import url("estilos.css");
 form {
   max-width: 560px;
   margin: 24px auto;

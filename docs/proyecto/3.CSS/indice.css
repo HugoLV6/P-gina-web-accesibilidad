@@ -1,4 +1,5 @@
 /* ====== Índice A–Z básico ====== */
+
 .indiceAZ {
   background-color: #e6f0ff;        /* fondo azul claro */
   border: 1px solid #c0d4ee;        /* borde suave */
@@ -28,6 +29,7 @@
 .indiceAZ a:hover {
   background-color: #d8e7ff;        /* resalta al pasar el ratón */
   text-decoration: underline;
+  background-color: #d8e7ff
 }
 
 .indiceAZ a:focus {

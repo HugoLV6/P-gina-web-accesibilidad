@@ -1,0 +1,102 @@
+/* ================================
+   Estilo Adaptativo (solo overrides)
+   Breakpoints: ≤480px (móvil) y ≥1920px (HD)
+   ================================ */
+
+/* ---------- MÓVIL: ≤480 px ---------- */
+@media screen and (max-width: 480px) {
+  html { font-size: 16px; }
+  body { margin: 0; }
+
+  /* Contenido principal y contenedores */
+  main, .container {
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  /* Titulares y texto */
+  h1 { font-size: 28px; }
+  h2 { font-size: 20px; }
+  p  { font-size: 16px; line-height: 1.5; }
+
+  /* Navegación y botones */
+  nav a { display: block; margin: 8px 0; }
+  .boton-nav {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 8px 0;
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+
+  /* Índices */
+  .indiceAZ {
+    gap: 8px;
+    padding:  10px;
+    justify-content: center;  /* más natural en móvil */
+  }
+  .indiceAZ a {
+    font-size: 18px;
+    padding: 8px 10px;
+  }
+  .indice-lista {
+    width: 100%;
+    max-width: none;
+    padding: 12px 14px;
+    margin: 12px 0;
+    font-size: 17px;
+  }
+
+  /* Tablas: permitir scroll horizontal si no caben */
+  .table-wrap { overflow-x: auto; }
+  table { min-width: 600px; font-size: 14px; }
+  thead th, tbody td { padding: 10px 12px; }
+
+  /* Imágenes y figuras */
+  img { max-width: 100%; height: auto; display: block; }
+
+  /* Formularios */
+  form {
+    max-width: none;
+    width: 100%;
+    padding: 16px;
+  }
+  select[multiple] { min-height: 140px; }
+}
+
+/* ---------- ESCRITORIO HD: ≥1920 px ---------- */
+@media screen and (min-width: 1920px) {
+  html { font-size: 18px; } /* texto un poco mayor */
+  
+  main, .container {
+    max-width: 1400px;      /* línea de lectura cómoda */
+    padding: 24px;
+    margin: 0 auto;
+  }
+
+  h1 { font-size: 40px; }
+  h2 { font-size: 28px; }
+  p  { font-size: 18px; line-height: 1.65; }
+
+  nav a { padding: 10px 14px; margin-right: 12px; }
+  .boton-nav { font-size: 16px; padding: 10px 18px; }
+
+  .indiceAZ {
+    gap: 14px;
+    padding: 14px 18px;
+    justify-content: center;
+  }
+  .indiceAZ a { font-size: 20px; }
+
+  .indice-lista {
+    max-width: 900px;
+    padding: 20px 28px;
+  }
+
+  table { font-size: 16px; }
+  thead th, tbody td { padding: 14px 16px; }
+
+  form { max-width: 700px; }
+}
