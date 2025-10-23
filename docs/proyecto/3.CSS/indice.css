@@ -1,68 +1,58 @@
-/* ====== Índice A–Z básico ====== */
-
+/*Indice letras AZ*/
 .indiceAZ {
-  background-color: #e6f0ff;        /* fondo azul claro */
-  border: 1px solid #c0d4ee;        /* borde suave */
+  background-color: #e6f0ff;
+  border: 1px solid #c0d4ee;
   border-radius: 10px;
   padding: 10px 15px;
   display: flex;
-  flex-wrap: wrap;                  /* que las letras bajen si no caben */
-  gap: 10px;                        /* espacio entre letras */
-  justify-content: center;          /* centrado horizontal */
-  list-style: none;                 /* sin viñetas */
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
   margin: 20px 0;
 }
-
 .indiceAZ li {
-  display: inline;                  /* para que las letras se vean seguidas */
+  display: inline;
 }
-
 .indiceAZ a {
-  color: #004080;                   /* azul del sitio */
+  color: #004080;
   font-weight: bold;
   font-size: 18px;
   text-decoration: none;
   padding: 6px 8px;
   border-radius: 5px;
 }
-
 .indiceAZ a:hover {
-  background-color: #d8e7ff;        /* resalta al pasar el ratón */
+  background-color: #d8e7ff;
   text-decoration: underline;
   background-color: #d8e7ff
 }
-
 .indiceAZ a:focus {
-  outline: 2px solid #ffbf47;       /* foco accesible */
+  outline: 2px solid #ffbf47;
   outline-offset: 2px;
 }
-/* ===== Listas de índice (mapa, estructura, divisiones) ===== */
+/*Índice de listas*/
 .indice-lista {
-  background-color: #eaf3ff;       /* fondo azul claro */
-  border: 1px solid #b5d1f2;       /* borde sutil */
+  background-color: #eaf3ff;
+  border: 1px solid #b5d1f2;
   border-radius: 8px;
   padding: 16px 24px;
   margin: 20px auto;
   width: 90%;
   max-width: 700px;
   list-style-type: disc;
-  color: #002244;                  /* texto azul oscuro */
+  color: #002244;
 }
-
-/* Sublistas */
 .indice-lista ul {
   list-style-type: circle;
   margin-left: 30px;
   margin-top: 6px;
 }
-
-/* Enlaces dentro del índice */
 .indice-lista a {
   color: #004080;
   text-decoration: none;
   font-weight: 600;
 }
-
 .indice-lista a:hover {
   color: #0066cc;
   text-decoration: underline;
