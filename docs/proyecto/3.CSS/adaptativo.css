@@ -1,102 +1,86 @@
-/* ================================
-   Estilo Adaptativo (solo overrides)
-   Breakpoints: ≤480px (móvil) y ≥1920px (HD)
-   ================================ */
+/* =====================================
+   ESTILO ADAPTATIVO (solo 1920px y 480px)
+   ===================================== */
 
-/* ---------- MÓVIL: ≤480 px ---------- */
+/* === VISTA MÓVIL — hasta 480px === */
 @media screen and (max-width: 480px) {
-  html { font-size: 16px; }
-  body { margin: 0; }
+  html { font-size: 18px; }                /* texto más grande para legibilidad */
+  body { margin: 0; line-height: 1.7; }
 
-  /* Contenido principal y contenedores */
   main, .container {
     max-width: 100%;
-    padding: 10px;
+    padding: 16px;
     margin: 0 auto;
   }
 
-  /* Titulares y texto */
-  h1 { font-size: 28px; }
-  h2 { font-size: 20px; }
-  p  { font-size: 16px; line-height: 1.5; }
+  h1 { font-size: 30px; }
+  h2 { font-size: 22px; }
+  h3 { font-size: 18px; }
+  p, li, label { font-size: 18px; }
 
-  /* Navegación y botones */
-  nav a { display: block; margin: 8px 0; }
-  .boton-nav {
-    display: block;
-    width: 100%;
+  nav, header, footer {
+    padding: 10px;
     text-align: center;
-    margin: 8px 0;
-    padding: 10px 12px;
-    font-size: 16px;
   }
 
-  /* Índices */
+  /* índices */
   .indiceAZ {
     gap: 8px;
-    padding:  10px;
-    justify-content: center;  /* más natural en móvil */
+    padding: 10px;
+    justify-content: center;
   }
   .indiceAZ a {
-    font-size: 18px;
-    padding: 8px 10px;
+    font-size: 20px;
+    padding: 10px 12px;
+    min-height: 44px;   /* más fácil de pulsar */
   }
+
   .indice-lista {
     width: 100%;
     max-width: none;
-    padding: 12px 14px;
+    padding: 14px 16px;
     margin: 12px 0;
-    font-size: 17px;
+    font-size: 18px;
   }
 
-  /* Tablas: permitir scroll horizontal si no caben */
-  .table-wrap { overflow-x: auto; }
-  table { min-width: 600px; font-size: 14px; }
-  thead th, tbody td { padding: 10px 12px; }
-
-  /* Imágenes y figuras */
-  img { max-width: 100%; height: auto; display: block; }
-
-  /* Formularios */
-  form {
-    max-width: none;
+  /* formularios */
+  form { width: 100%; padding: 18px; }
+  label { display: block; margin: 8px 0; }
+  input, select, textarea {
     width: 100%;
-    padding: 16px;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 10px;
   }
-  select[multiple] { min-height: 140px; }
+  input[type="submit"] {
+    font-size: 18px;
+    padding: 12px 16px;
+    min-height: 44px;
+  }
+
+  /* imágenes y tablas */
+  img { max-width: 100%; height: auto; display: block; }
+  .table-wrap { overflow-x: auto; }
 }
 
-/* ---------- ESCRITORIO HD: ≥1920 px ---------- */
+/* === VISTA ESCRITORIO HD — desde 1920px === */
 @media screen and (min-width: 1920px) {
-  html { font-size: 18px; } /* texto un poco mayor */
-  
+  html { font-size: 18px; }     /* un poco más grande que la base */
+  body { line-height: 1.6; }
+
   main, .container {
-    max-width: 1400px;      /* línea de lectura cómoda */
-    padding: 24px;
+    max-width: 1400px;
     margin: 0 auto;
+    padding: 24px;
   }
 
   h1 { font-size: 40px; }
   h2 { font-size: 28px; }
-  p  { font-size: 18px; line-height: 1.65; }
+  h3 { font-size: 22px; }
+  p, li { font-size: 18px; }
 
-  nav a { padding: 10px 14px; margin-right: 12px; }
-  .boton-nav { font-size: 16px; padding: 10px 18px; }
-
-  .indiceAZ {
-    gap: 14px;
-    padding: 14px 18px;
-    justify-content: center;
-  }
   .indiceAZ a { font-size: 20px; }
+  .indice-lista { font-size: 18px; }
 
-  .indice-lista {
-    max-width: 900px;
-    padding: 20px 28px;
-  }
-
-  table { font-size: 16px; }
-  thead th, tbody td { padding: 14px 16px; }
-
-  form { max-width: 700px; }
+  form { max-width: 700px; margin: auto; }
 }

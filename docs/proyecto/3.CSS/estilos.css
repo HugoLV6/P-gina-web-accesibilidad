@@ -161,4 +161,25 @@ blockquote {
   font-style: italic;
   color: #0f2437;                 /* texto oscuro legible */
 }
+/* Material Symbols */
+.material-symbols-outlined {
+    font-size: 1.2em;
+    vertical-align: middle;
+    color: #007bff;       /* color azul */
+    margin-right: 6px;
+}
+
+/* Unicode inicial en el párrafo */
+main p:first-of-type {
+    font-size: 1em;
+}
+
+/* Opcional: enlaces con iconos alineados */
+nav a {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 12px;
+    text-decoration: none;
+    color: inherit;
+}
 
