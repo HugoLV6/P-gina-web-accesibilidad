@@ -1,22 +1,22 @@
 @import url("adaptativo.css");
-
-/* Variables globales */
 :root {
-  --color-principal: #004080;
-  --color-secundario: #dbe9fd;
-  --color-texto: #000000;
+ 
   --color-fondo: #ffffff;
-  --color-hover: #0066cc;
-  --color-borde: #cd853f;
-  --color-anuncio-fondo: #9bf7c4;
-  --color-anuncio-borde: #ff0909;
+  --color-texto: #000000;
+  --color-principal: #001a66;
+  --color-secundario: #ffffff;
+  --color-enlace: #0033cc;
+  --color-hover: #003399;
+  --color-nav-hover: #cfe0ff;
+  --color-borde: #000000;
+  --color-anuncio-fondo: #fff4b3;
+  --color-anuncio-borde: #000000;
   --color-bloque-fondo: #e6f0ff;
-  --color-bloque-borde: #004080;
+  --color-bloque-borde: #001a66;
   --color-footer-texto: #ffffff;
   --color-focus: #ffbf47;
-  --color-icono: #007bff;
+  --color-icono: #ff8000;
 }
-
 /*Estilo general*/
 body {
   font-family: Arial, sans-serif;
@@ -76,7 +76,7 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-  background-color: #919cd8; /* puedes también hacer variable si lo usas más */
+  background-color: #c2e20c; /* puedes también hacer variable si lo usas más */
 }
 
 /* Secciones */

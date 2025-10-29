@@ -1,7 +1,7 @@
-@import url(estilos.css);
+
 @import url(tablas.css);
 /*Escritorio 1920px*/
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1020px) {
   main {
     max-width: 1400px;
     margin: 0 auto;

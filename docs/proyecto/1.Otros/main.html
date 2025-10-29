@@ -4,9 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Enciclopedia UA - Página Principal</title>
-        <link rel="stylesheet" href="../3.CSS/estilos.css">
+        <link rel="stylesheet" href="../3.CSS/estilos.css" title="Estilo principal">
+        <link rel="alternate stylesheet" href="../3.CSS/modo_noche.css" title="Modo noche">
+        <link rel="alternate stylesheet" href="../3.CSS/modo_contraste.css" title="Modo alto contraste">
         <link rel="stylesheet" href="../3.CSS/indice.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+        <link rel="stylesheet" href="../3.CSS/modo_impresion.css" media="print">
+
     </head>
     <body>
         <header>
@@ -16,7 +20,7 @@
         <nav aria-label="miga de pan">
             <a href="main.html">Inicio</a>
         </nav>
-        <h2 style="margin-left: 30px;"> Tabla de contenidos</h2>
+        <h2 style="margin-left: 30px;" class="no-print"> Tabla de contenidos</h2>
         <nav>
             <ul>
                 <li><a href="#mapa">Mapa del sitio web</a></li>
@@ -82,7 +86,7 @@
                 </article> 
              </section>
             <figure>
-                <p id="mapa2">Haz click en cada órgano para ver un ejemplo de una enfermedad que afecte a estos órganos</p>
+                <p id="mapa2" >Haz click en cada órgano para ver un ejemplo de una enfermedad que afecte a estos órganos</p>
                 <img src="organos.jpg" usemap="#organos" alt="Ejemplos de enfermedades en algunos órganos del cuerpo humano">
                 <map name="organos">
                     <area target="_blank" alt="Enfermedad pulmones - Neumonía" title="Enfermedad pulmones - Neumonía" href="https://medlineplus.gov/spanish/ency/article/000145.htm" coords="425,183,299,58" shape="rect">
