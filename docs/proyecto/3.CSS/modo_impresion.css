@@ -1,5 +1,3 @@
-/* ===== Estilo de IMPRESIÓN (simple) ===== */
-
 @page {
   size: A4;
   margin: 2.5cm;
@@ -7,7 +5,6 @@
 
 @media print {
 
-  /* Base legible en papel */
   html, body {
     background: #fff !important;
     color: #000 !important;
@@ -17,7 +14,6 @@
     padding-bottom: 3cm;
   }
 
-  /* Footer visible en impresión */
   footer {
     display: block !important;
     position: static !important;
@@ -26,7 +22,6 @@
     color: #000 !important;
   }
 
-  /* Imágenes: que se vean y no se corten */
   img, picture, figure img {
     display: block !important;
     max-width: 100% !important;
@@ -40,20 +35,15 @@
     break-inside: avoid;
   }
 
-  /* Enlaces sobrios en papel */
   a {
     color: #000 !important;
     text-decoration: underline;
   }
 
-  /* Quitar navegación e interacción */
-  nav, .skip-link,
-  .boton-nav, button, input, select, textarea,
-  form, .menu, .sidebar, .no-print {
+  nav, .skip-link,.boton-nav, button, input, select, textarea,form, .menu, .sidebar, .no-print {
     display: none !important;
   }
 
-  /* Cortes “bonitos” */
   h1, h2, h3 {
     page-break-after: avoid;
   }
@@ -63,7 +53,6 @@
     widows: 3;
   }
 
-  /* Tablas simples en B/N */
   table {
     width: 100%;
     border-collapse: collapse;
@@ -74,8 +63,7 @@
     border: 1pt solid #000;
     padding: 4pt 6pt;
   }
-  
-  
+   
   body::after {
     content: "©Enciclopedia UA\A URL sitio web: https://hugolv6.github.io/P-gina-web-accesibilidad/proyecto/1.Otros/main.html";
     display: block;
@@ -83,11 +71,7 @@
     font-size: 10pt;
     color: #444;
     margin-top: 2cm;
-    page-break-before: always; /* fuerza que empiece en una nueva página */
+    page-break-before: always;
     white-space: pre;
   }
-
-
-
-
 }

@@ -1,9 +1,7 @@
 @import url("adaptativo.css");
 @import url("estilos.css");
 
-/* === MODO NOCHE === */
 html {
-  /* Invertimos todos los colores y giramos el tono 180º */
   filter: invert(1) hue-rotate(180deg);
   background-color: #000000;
 }

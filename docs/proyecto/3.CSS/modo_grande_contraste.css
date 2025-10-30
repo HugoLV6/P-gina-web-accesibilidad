@@ -1,4 +1,6 @@
 @import url("adaptativo.css");
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
 :root {
   --color-fondo: #ffffff;
   --color-texto: #000000;
@@ -16,17 +18,26 @@
   --color-focus: #ffbf47;
   --color-icono: #ff8000;
 }
-/*Estilo general*/
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Atkinson Hyperlegible', system-ui, Arial, sans-serif !important;
+  font-size: 20px !important;
+  line-height: 34px !important;
   color: var(--color-texto);
   background-color: var(--color-fondo);
-  line-height: 22px;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
+  text-align: left !important;
 }
 
-/*Encabezado*/
+main {
+  max-width: 650px;
+  margin: 0px auto;
+  padding: 24px;
+}
+
+p { margin-bottom: 24px; }
+
 header {
   background-color: var(--color-principal);
   color: var(--color-footer-texto);
@@ -34,17 +45,15 @@ header {
   padding: 20px;
 }
 
-/*Titulo h1*/
 h1 {
   color: var(--color-footer-texto);
   font-size: 34px;
   text-align: center;
-  margin: 0;
+  margin: 0px;
   font-family: "Times New Roman", serif;
-  padding: 0;
+  padding: 0px;
 }
 
-/* Titulo h2*/
 h2 {
   color: var(--color-principal);
   font-size: 28px;
@@ -53,14 +62,6 @@ h2 {
   font-family: "Times New Roman", serif;
 }
 
-/* Párrafos*/
-p {
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 16px;
-}
-
-/* Navegación*/
 nav {
   background-color: var(--color-secundario);
   padding: 10px;
@@ -71,18 +72,15 @@ nav a {
   color: var(--color-principal);
   text-decoration: none;
   margin-right: 10px;
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
 }
 
 nav a:hover {
   text-decoration: underline;
-  background-color: #c2e20c; /* puedes también hacer variable si lo usas más */
-}
-
-/* Secciones */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
+  background-color: var(--color-nav-hover);
 }
 
 section {
@@ -92,30 +90,27 @@ section {
   padding: 15px;
 }
 
-/* Imágenes */
 img {
   display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 10px auto;
+  max-width: 90% !important;
+  height: auto !important;
+  margin: 16px auto;
 }
 
-/* Citas */
 .anuncio {
   background-color: var(--color-anuncio-fondo);
   color: var(--color-texto);
   border: 1px solid var(--color-anuncio-borde);
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px 0px;
 }
 
 .conBorde {
   border: 2px solid var(--color-borde);
   padding: 10px;
-  margin: 10px 0;
+  margin: 10px 0px;
 }
 
-/* Pie de página */
 body > footer {
   background-color: var(--color-principal);
   color: var(--color-footer-texto);
@@ -133,7 +128,6 @@ address {
   margin-bottom: 5px;
 }
 
-/* Botones */
 .boton-nav {
   display: inline-block;
   background-color: var(--color-principal);
@@ -147,26 +141,22 @@ address {
   transition: background-color 0.2s ease;
 }
 
-.boton-nav:hover {
-  background-color: var(--color-hover);
-}
+.boton-nav:hover { background-color: var(--color-hover); }
 
 .boton-nav:focus {
   outline: 3px solid var(--color-focus);
   outline-offset: 2px;
 }
 
-/* Blockquote */
 blockquote {
   background-color: var(--color-bloque-fondo);
   border-left: 4px solid var(--color-bloque-borde);
-  margin: 16px 0;
+  margin: 16px 0px;
   padding: 12px 16px;
   font-style: italic;
   color: #0f2437;
 }
 
-/* Símbolos */
 .material-symbols-outlined {
   font-size: 1.2em;
   vertical-align: middle;
@@ -174,16 +164,6 @@ blockquote {
   margin-right: 6px;
 }
 
-/* Iconos alineados*/
-nav a {
-  display: inline-flex;
-  align-items: center;
-  margin-right: 12px;
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Saltar A */
 .skip-link {
   position: absolute;
   top: -40px;
