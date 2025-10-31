@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
 
 :root{
-  --c-fondo: #ffffff;
-  --c-texto: #000000;
-  --c-enlace: #0033cc;
-  --c-enlace-hover: #001a66;
-  --c-focus: #ffbf47;
+  --color-fondo: #ffffff;
+  --color-texto: #000000;
+  --color-enlace: #0033cc;
+  --color-enlace-hover: #001a66;
+  --color-focus: #ffbf47;
 }
 
 body{
-  background: var(--c-fondo);
-  color: var(--c-texto);
+  background: var(--color-fondo);
+  color: var(--color-texto);
   font-family: 'Atkinson Hyperlegible', system-ui, Arial, sans-serif !important;
   font-size: 20px !important;   
   line-height: 34px !important;  
@@ -35,11 +35,11 @@ img{
 
 
 a{
-  color: var(--c-enlace);
+  color: var(--color-enlace);
   text-decoration: underline !important;
   font-weight: 600;
 }
-a:hover, a:focus{ color: var(--c-enlace-hover); }
+a:hover, a:focus{ color: var(--color-enlace-hover); }
 
 table{
   width: 100%;
