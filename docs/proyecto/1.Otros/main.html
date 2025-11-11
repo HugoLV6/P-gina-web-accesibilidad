@@ -12,7 +12,6 @@
         <link rel="alternate stylesheet" href="../3.CSS/modo_grande_contraste.css" title="Modo letras grandes + contraste">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
         <link rel="stylesheet" href="../3.CSS/modo_impresion.css" media="print">
-
     </head>
     <body>
         <header>
@@ -112,12 +111,15 @@
             <embed src="Documento Accesible.pdf" type="application/pdf" width="600" height="400" />
             <embed src="Documento no accesible.pdf" type="application/pdf" width="600" height="400" />
             <h2>Videos sobre las enfermedades</h2>
-            <video width="320" height="240" controls>
+            <video width="600" height="600" controls>
                 <source src="Videos/2025-11-11_17-13-50.mp4" type="video/mp4">
                 <track src="Videos/2025-11-11_17-13-50-English.vtt" kind="subtitles" srclang="en" label="English">
                 <track src="Videos/2025-11-11_17-13-50.vtt" kind="subtitles" srclang="es" label="Español">
             </video>
-
+            <h2>Video Amara</h2>
+            <div id="video-amara"><div class="amara-embed" data-url="http://www.youtube.com/watch?v=x46wCEV4Q34" data-team="null"></div></div>
+            <h2>Video Youtube</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x46wCEV4Q34?si=to1knM6kcEAcEM8u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </main>
         <footer id="pie">
             <h2>Contacto</h2>
@@ -128,5 +130,6 @@
                 Pedro Sánchez Blanco: psb39@alu.ua.es
             </address>
         </footer>
+        <script type="text/javascript" src="https://amara.org/embedder-iframe"></script>
     </body>
 </html>

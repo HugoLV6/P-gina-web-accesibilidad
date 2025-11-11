@@ -16,7 +16,9 @@
   --color-focus: #ffbf47;
   --color-icono: #007bff;
 }
-
+#video-amara {
+width: 600px;
+    }
 /*Estilo general*/
 body {
   font-family: Arial, sans-serif;
